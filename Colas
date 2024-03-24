@@ -1,0 +1,28 @@
+Colas:
+En Programación, una cola es una estructura de datos que sigue el principio de “primero en entrar, primero en salir” (FIFO, por sus siglas en ingles). Los elementos se agregan al final de la cola y se eliminan del frente de la cola. 
+Las colas se utilizan comúnmente en situaciones donde el orden de llegada es importante, como la administración de tareas o eventos.
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class colas {
+	
+	public static void main(String[] args) {
+		   Queue<String> pedidos = new LinkedList<>();
+
+	        // Agregar pedidos a la cola
+	        pedidos.offer("Pedido 1");
+	        pedidos.offer("Pedido 2");
+	        pedidos.offer("Pedido 3");
+	        pedidos.offer("Pedido 4");
+	        pedidos.offer("Pedido 5");
+
+	        System.out.println("Procesando pedidos:");
+
+	        // Procesar los pedidos en orden de llegada
+	        while (!pedidos.isEmpty()) {
+	            String pedido = pedidos.poll();
+	           System.out.println("procesando: " + pedido);
+	        }
+	}
+}
