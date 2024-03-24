@@ -1,0 +1,25 @@
+Listas:
+En ciencias de la computación, una lista o secuencia es un tipo de dato abstracto que representa una secuencia ordenada de valores, donde el mismo valor puede ocurrir más de una vez. Un caso de una lista es una representación computacional del concepto matemático de una secuencia finita.
+Una lista es una sucesión de nodos en la que a partir de un nodo se puede acceder al que ocupa la siguiente posición en la lista. Esta característica nos indica que el acceso a las listas es secuencial y no indexado, por lo que para acceder al último elemento de la lista hay que recorrer los n-1 elementos previos ( n es el tamaño de la lista).
+
+import java.util.ArrayList;
+		import java.util.List;
+
+		public class lista {
+
+			public static void main(String[] args) {
+		// Crear una lista de enteros
+        List<Integer> numeros = new ArrayList<>();
+
+        // Agregar elementos a la lista
+        numeros.add(1);
+        numeros.add(10);
+        numeros.add(125);
+
+        // Recorrer la lista
+        System.out.println("Elementos de la lista:");
+        for (int numero : numeros) {
+            System.out.println(numero);
+        }
+	}
+}
